@@ -40,6 +40,10 @@ body {
   transition: transorm 0.5s linear;
 }
 
+.container.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .circle button {
   cursor: pointer;
   position: absolute;
@@ -48,7 +52,7 @@ body {
   height: 100px;
   background: transparent;
   border: 0;
-  font-size: 20px;
+  font-size: 26px;
   color: #fff;
 }
 
@@ -62,6 +66,13 @@ body {
 
 .circle button#close {
   top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
 }
 
 nav {
