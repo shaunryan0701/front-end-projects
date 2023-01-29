@@ -28,9 +28,20 @@ h1 {
 
 .btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 50%;
   top: 40%;
   transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1 rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  width: 15rem;
+  text-transform: uppercase;
 }
 
 .container {
